@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it, vitest } from 'vitest'
+// import { beforeEach, describe, expect, it, vitest } from 'vitest'
 import { InMemoryBaseModelRepository } from '@/shared/domain/in-memory-base-model-repository'
 import { NotFoundError } from '@/shared/domain/errors/not-found-error'
 
@@ -23,9 +23,9 @@ export class StubInMemoryBaseModelRepository extends InMemoryBaseModelRepository
   }
 }
 
-describe('[InMemoryBaseModelRepository]: Unit Tests', () => {
-  let repository: StubInMemoryBaseModelRepository
+let repository: StubInMemoryBaseModelRepository
 
+describe('[InMemoryBaseModelRepository]: Unit Tests', () => {
   beforeEach(() => {
     repository = new StubInMemoryBaseModelRepository()
   })
