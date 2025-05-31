@@ -8,6 +8,7 @@ interface RegisterUserUseCaseInput {
   password: string
   phone: string
 }
+
 interface RegisterUserUseCaseOutput {
   userId: string
 }
